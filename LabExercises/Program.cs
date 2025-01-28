@@ -21,5 +21,22 @@ public class Program
         Console.WriteLine($"Test 1: {ex21}");
         Console.WriteLine($"Test 2: {ex22}");
         Console.WriteLine($"Test 3: {ex23}");
+        // Fix 1
+        string ex2T1 = Week2Exercise2.OverTimeTest([10.5, 17, 32.25, 1.5], ["10.5, 17, 32.25, 1.5", "6.5", "6.5 and 0", "209.625", "209.63"]);
+        Console.WriteLine($"Test Fix 1: {ex2T1}");
+        // Fix 2
+        string ex2T2 = Week2Exercise2.OverTimeTest([18, 20, 32.5, 2], ["18, 20, 32.5, 2", "2", "0 and 2", "130", "130.00"]);
+        Console.WriteLine($"Test Fix 2: {ex2T2}");
+        
+        // Exercise 3
+        Console.WriteLine("use this method to test your function");
+        Console.WriteLine(Week2Exercise3.ConsecutiveNumbers([5, 1, 4, 3, 2]));
+        Console.WriteLine(Week2Exercise3.ConsecutiveNumbers([5, 1, 4, 3, 2, 8]));
+        Console.WriteLine(Week2Exercise3.ConsecutiveNumbers([5, 6, 7, 8, 9, 9]));
+        
+        // Exercise 4
+        Console.WriteLine(Week2Exercise4.SmallestTransform(153));
+        Console.WriteLine(Week2Exercise4.SmallestTransform(33338));
+        Console.WriteLine(Week2Exercise4.SmallestTransform(7777));
     }
 }
